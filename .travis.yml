@@ -8,5 +8,6 @@ install:
 script:
   - flake8
   - pytest tests --cov=tests
+  - pipenv run pytest
 after_success:
   - codecov
